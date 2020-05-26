@@ -1,7 +1,7 @@
 package medhelp.controller;
 
 import medhelp.model.User;
-import medhelp.repository.UserRepository;
+import medhelp.persistance.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

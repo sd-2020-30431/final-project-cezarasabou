@@ -14,13 +14,14 @@ public class User {
     @Column
     private String password;
 
-    public long getId() {
-        return user_id;
-    }
+    @Column(name = "email_address", nullable = false)
+    private String emailAddress;
 
-    public void setId(long user_id) {
-        this.user_id = user_id;
-    }
+    @Column(name = "active")
+    private boolean active;
+
+    public User(){}
+
 
     public String getUsername() {
         return username;
@@ -36,5 +37,29 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public long getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(long user_id) {
+        this.user_id = user_id;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }
