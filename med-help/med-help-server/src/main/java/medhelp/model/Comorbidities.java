@@ -22,6 +22,12 @@ public class Comorbidities {
     private Boolean obesity;
     @Column(name = "kidney_disease", nullable = false)
     private Boolean kidneyDisease;
+    @Column(name = "liver_disease", nullable = false)
+    private Boolean liverDisease;
+    @Column(name = "neurological_disease", nullable = false)
+    private Boolean neurologicalDisease;
+    @Column(name = "autoimmune_disease", nullable = false)
+    private Boolean autoimmuneDisease;
 
 
     public Comorbidities() {
@@ -89,5 +95,29 @@ public class Comorbidities {
 
     public void setKidneyDisease(Boolean kidneyDisease) {
         this.kidneyDisease = kidneyDisease;
+    }
+
+    public Boolean getLiverDisease() {
+        return liverDisease;
+    }
+
+    public void setLiverDisease(Boolean liverDisease) {
+        this.liverDisease = liverDisease;
+    }
+
+    public Boolean getNeurologicalDisease() {
+        return neurologicalDisease;
+    }
+
+    public void setNeurologicalDisease(Boolean neurologicalDisease) {
+        this.neurologicalDisease = neurologicalDisease;
+    }
+
+    public Boolean getAutoimmuneDisease() {
+        return autoimmuneDisease;
+    }
+
+    public void setAutoimmuneDisease(Boolean autoimmuneDisease) {
+        this.autoimmuneDisease = autoimmuneDisease;
     }
 }
