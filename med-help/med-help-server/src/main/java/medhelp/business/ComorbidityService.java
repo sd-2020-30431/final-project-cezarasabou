@@ -7,18 +7,18 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ComorbiditiesService {
+public class ComorbidityService {
 
-    private final ComorbiditiesService comorbiditiesService;
+    private final ComorbidityService comorbiditiesService;
 
     @Autowired
-    public ComorbiditiesService(ComorbiditiesService comorbiditiesService) {
-        this.comorbiditiesService = comorbiditiesService;
+    public ComorbidityService(ComorbidityService comorbidityService) {
+        this.comorbiditiesService = comorbidityService;
     }
 
     public List<Comorbidity> getAllComorbities(){
         return comorbiditiesService.getAllComorbities();
     }
 
-    public Comorbidity
+
 }

@@ -7,7 +7,7 @@ public class Comorbidity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long comorbidities_id;
+    private long comorbidity_id;
     @Column(name = "chronic_lung_disease", nullable = false)
     private Boolean chronicLungDisease;
     @Column(name = "heart_disease", nullable = false)
@@ -33,12 +33,12 @@ public class Comorbidity {
     public Comorbidity() {
     }
 
-    public long getComorbidities_id() {
-        return comorbidities_id;
+    public long getComorbidity_id() {
+        return comorbidity_id;
     }
 
-    public void setComorbidities_id(long comorbidities_id) {
-        this.comorbidities_id = comorbidities_id;
+    public void setComorbidity_id(long comorbidities_id) {
+        this.comorbidity_id = comorbidities_id;
     }
 
     public Boolean getChronicLungDisease() {
