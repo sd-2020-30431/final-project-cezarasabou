@@ -3,7 +3,7 @@ package medhelp.model;
 import javax.persistence.*;
 
 @Entity
-public class Comorbidities {
+public class Comorbidity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,7 +30,7 @@ public class Comorbidities {
     private Boolean autoimmuneDisease;
 
 
-    public Comorbidities() {
+    public Comorbidity() {
     }
 
     public long getComorbidities_id() {
