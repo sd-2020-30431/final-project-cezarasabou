@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long user_id;
+    private long userId;
 
     @Column
     private String username;
@@ -47,12 +47,12 @@ public class User {
         this.emailAddress = emailAddress;
     }
 
-    public long getUser_id() {
-        return user_id;
+    public long getUserId() {
+        return userId;
     }
 
-    public void setUser_id(long user_id) {
-        this.user_id = user_id;
+    public void setUser_id(long userId) {
+        this.userId = userId;
     }
 
     public boolean isActive() {
