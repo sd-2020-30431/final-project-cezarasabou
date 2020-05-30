@@ -16,10 +16,9 @@ public class MedicalHistoryController {
     private final MedicalHistoryService medicalHistoryService;
     private final MedicalHistoryMapper medicalHistoryMapper;
 
-    public MedicalHistoryController(MedicalHistoryService medicalHistoryService,
-                                    MedicalHistoryMapper medicalHistoryMapper) {
+    public MedicalHistoryController(MedicalHistoryService medicalHistoryService) {
         this.medicalHistoryService = medicalHistoryService;
-        this.medicalHistoryMapper = medicalHistoryMapper;
+        this.medicalHistoryMapper = MedicalHistoryMapper.INSTANCE;
     }
 
     @GetMapping("/medicalHistories")

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MedicalHistory} from "./medicalHistory";
 
 @Component({
   selector: 'app-medical-history',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MedicalHistoryComponent implements OnInit {
 
-  constructor() { }
+  medicalHistory: MedicalHistory;
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.medicalHistory = new MedicalHistory();
   }
 
 }

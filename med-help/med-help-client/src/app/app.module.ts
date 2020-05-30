@@ -9,6 +9,7 @@ import { ComorbidityComponent } from './components/comorbidity/comorbidity.compo
 import { MedicalHistoryComponent } from './components/medical-history/medical-history.component';
 import { UserComponent } from './components/user/user.component';
 import { XrayComponent } from './components/xray/xray.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { XrayComponent } from './components/xray/xray.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
