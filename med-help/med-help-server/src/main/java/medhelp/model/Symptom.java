@@ -10,7 +10,11 @@ public class Symptom {
     private long symptom_id;
 
     @Column(name = "symptom_name", nullable = false)
-    private int symptomName;
+    private String symptomName;
+
+    @Column(name = "symptom_state", nullable = false)
+    private Boolean symptomState;
+
 
     public Symptom() {
 
@@ -24,13 +28,21 @@ public class Symptom {
         this.symptom_id = symptom_id;
     }
 
-    public int getSymptomName() {
+    public String getSymptomName() {
         return symptomName;
     }
 
-    public void setSymptomName(int symptomName) {
+    public void setSymptomName(String symptomName) {
 
         this.symptomName = symptomName;
+    }
+
+    public Boolean getSymptomState() {
+        return symptomState;
+    }
+
+    public void setSymptomState(Boolean symptomState) {
+        this.symptomState = symptomState;
     }
 
 

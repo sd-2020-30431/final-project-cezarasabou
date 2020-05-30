@@ -1,4 +1,4 @@
-package medhelp.controller;
+package medhelp.presentation.controller;
 
 import medhelp.model.User;
 import medhelp.persistance.UserRepository;

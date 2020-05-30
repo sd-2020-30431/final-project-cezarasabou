@@ -1,4 +1,4 @@
-package medhelp.controller;
+package medhelp.presentation.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
