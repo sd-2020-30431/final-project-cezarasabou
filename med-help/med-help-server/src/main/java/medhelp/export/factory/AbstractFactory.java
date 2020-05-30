@@ -1,6 +1,8 @@
 package medhelp.export.factory;
 
-public class AbstractFactory<T> {
+import medhelp.export.report.ReportType;
+
+public interface AbstractFactory<T> {
     T create(ReportType reportType);
 }
 
